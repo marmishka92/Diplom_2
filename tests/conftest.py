@@ -1,9 +1,9 @@
 import pytest
 import requests
-from data import UrlsApi
+from urls import UrlsApi
 from helpers import UserData
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def create_new_user():
 
     payload = UserData.create_user_data()
